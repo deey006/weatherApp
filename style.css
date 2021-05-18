@@ -298,7 +298,10 @@ box-shadow: 14px 14px 20px #15151a, -14px -14px 20px rgb(70, 69, 69);
 
 
 @media screen and (max-width:768px) {
-    
+    body {
+        overflow-x: hidden;
+    }
+
     #myApp{
         width: 75%;
     }  
@@ -326,6 +329,9 @@ box-shadow: 14px 14px 20px #15151a, -14px -14px 20px rgb(70, 69, 69);
 
 
 @media screen and (max-width:540px) {
+    body {
+        overflow-x: hidden;
+    }
     .layer {
         width: 100vw;
         height: 23rem;
