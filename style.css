@@ -55,12 +55,15 @@
       width: 100%;
       box-shadow: 4px 4px 8px #101120, -4px -4px 8px rgba(0, 0, 0, 0.5);
   }
+  .clour{
+    background-color: var(--primary-variant);
+  }
   #myApp h1{
-      
       position: relative;
-      background-color: var(--primary-variant);
       color: var(--primary-font-color);
       font-size: 32px;
+      left: -5%;
+      animation: moveText 91s linear infinite;
   }
 .layer {
     z-index: 2;
@@ -138,6 +141,26 @@
 .cloud-img img {
     width: 100%;
     height: 100%;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 150px;
+    margin: 3rem 0 15rem 0 ;
+}
+#search {
+    width: 76%;
+    font-size: 100px;
+    padding: 5rem 5rem;
+    background-color: #1011208e;
+    border: none;
+    color: white;
+    border-radius: 80px;
+    box-shadow: 7px 7px 14px #15151a, -7px -7px 14px rgb(70, 69, 69);
+}
+#search:hover{
+    filter: brightness(1.5);
 }
 .temp {
     text-align: center;
@@ -362,19 +385,21 @@ box-shadow: 14px 14px 20px #15151a, -14px -14px 20px rgb(70, 69, 69);
         flex-wrap: wrap;
         justify-content: center;
         box-shadow: none;
+        
     }
     .highlight-card{
+        padding-top: 0;
         width: 45%;
         margin: 0 1rem 5rem 1rem;
         border: 50px;
         box-shadow: 7px 7px 14px #15151a, -7px -7px 14px rgb(70, 69, 69);
     }
     .highlight-card h1 {
-        font-size: 35px;
+        font-size: 75px;
         padding: 1rem 1rem 1rem 3rem;
     }
     .highlight-card h2 {
-        font-size: 25px;
+        font-size: 35px;
         text-align: center;
         padding: 1rem 0 1rem 0;
     }
@@ -385,6 +410,21 @@ box-shadow: 14px 14px 20px #15151a, -14px -14px 20px rgb(70, 69, 69);
     .middle, .top {
      margin-bottom: 1rem;
     box-shadow: none;
+    }
+    .search {
+        width: 100vw;
+        height: 10px;
+        margin: 5rem 0 0 0 ;
+    }
+    #search {
+        width: 70%;
+        font-size: 40px;
+        padding: 3rem 3.5rem;
+       border-radius: 10px;
+    }
+    #image{
+        width: 250px;
+        height: 250px;
     }
 
 }
@@ -511,6 +551,17 @@ box-shadow: 14px 14px 20px #15151a, -14px -14px 20px rgb(70, 69, 69);
     #image{
         width: 200px;
         height: 200px;
+    }
+    .search {
+        width: 100vw;
+        height: 10px;
+        margin: 4rem 0 0 0 ;
+    }
+    #search {
+        width: 70%;
+        font-size: 30px;
+        padding: 2rem 2.5rem;
+       border-radius: 10px;
     }
 
 }
@@ -643,6 +694,17 @@ box-shadow: 14px 14px 20px #15151a, -14px -14px 20px rgb(70, 69, 69);
      margin-bottom: 1rem;
     box-shadow: none;
     }
+    .search {
+        width: 100vw;
+        height: 10px;
+        margin: 3rem 0 1rem 0 ;
+    }
+    #search {
+        width: 70%;
+        font-size: 20px;
+        padding: 1rem 2rem;
+       border-radius: 10px;
+    }
     
        
 }
@@ -656,3 +718,5 @@ box-shadow: 14px 14px 20px #15151a, -14px -14px 20px rgb(70, 69, 69);
 @keyframes moveOne360 {0%{top: 5rem;right: 2rem;} 50%{top: 8rem;right: 4rem;;}100%{top: 5rem;right: 2rem; }}
 @keyframes moveTwo360 {0%{ left: 7%;}50%{left: 9%;top: 12rem;}100%{left: 7%; top:10rem;}}
 @keyframes moveThree360 {0%{left: 10%;}50%{left: -15%;}100%{left: 10%;;}}
+
+@keyframes moveText {0%{left: 5%;}100%{left: 105%;}}
