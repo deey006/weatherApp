@@ -245,7 +245,7 @@ box-shadow: 14px 14px 20px #15151a, -14px -14px 20px rgb(70, 69, 69);
         overflow-x: hidden;
     }
     .layer {
-        height: 35rem;
+        height: 42rem;
     }
     .header {
         width: 100vw;
@@ -290,12 +290,98 @@ box-shadow: 14px 14px 20px #15151a, -14px -14px 20px rgb(70, 69, 69);
         width: 60%;
         height: 60%;
     }
+    .first {
+        width: 100vw;
+        height: 45rem;
+    }
+    .degree h1 {
+        font-size: 90px;
+        padding-bottom:0; 
+        margin-bottom: 0;
+    }
+    .temperature{
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+    .temperature h2{
+        margin-top: 0;
+        font-size: 30px;
+    } 
+    .date h1, .location{
+        font-size: 25px;
+    }
+    .five-days {
+        width: 98%;
+        padding-bottom: 5rem;
+        box-shadow: none;
+        padding-bottom: 1rem;
+    }
+    .card {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 1rem 1rem 1rem;
+    border-radius: 20px;
+    }
+    .card-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 3rem;
+    font-size: 15px;
+    }
+    .highlight {
+        margin-top: 0rem;
+        width: 100vw;
+    }
+    .highlight-header{
+        margin-top: 6rem;
+        margin-bottom: 5rem;
+    }
+    .highlight-header h1 {
+        font-size: 50px;
+        line-height: 18px;
+    }
+    .highlight-cards{
+        width: 98%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-shadow: none;
+    }
+    .highlight-card{
+        width: 45%;
+        margin: 0 1rem 5rem 1rem;
+        border: 50px;
+        box-shadow: 7px 7px 14px #15151a, -7px -7px 14px rgb(70, 69, 69);
+    }
+    .highlight-card h1 {
+        font-size: 35px;
+        padding: 1rem 1rem 1rem 3rem;
+    }
+    .highlight-card h2 {
+        font-size: 25px;
+        text-align: center;
+        padding: 1rem 0 1rem 0;
+    }
+    
+    .top {
+        margin-top: 0rem;
+    }
+    .middle, .top {
+     margin-bottom: 1rem;
+    box-shadow: none;
+    }
+
 }
 
 
 @media screen and (max-width:768px) {
     body {
         overflow-x: hidden;
+    }
+    .layer {
+        height: 35rem;
     }
 
     #myApp{
@@ -320,7 +406,89 @@ box-shadow: 14px 14px 20px #15151a, -14px -14px 20px rgb(70, 69, 69);
         height: 250px;
         animation: moveThree360 35s linear infinite;
     }
+
+    .first {
+        width: 100vw;
+        height: 35rem;
+    }
+    .degree h1 {
+        font-size: 90px;
+        padding-bottom:0; 
+        margin-bottom: 0;
+    }
+    .temperature{
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+    .temperature h2{
+        margin-top: 0;
+        font-size: 30px;
+    } 
+    .date h1, .location{
+        font-size: 25px;
+    }
+    .five-days {
+        width: 90%;
+        padding-bottom: 5rem;
+        box-shadow: none;
+        padding-bottom: 1rem;
+    }
+    .card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 1rem 1rem 1rem;
+    border-radius: 20px;
+    }
+    .card-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 3rem;
+    font-size: 15px;
+    }
+    .highlight {
+        margin-top: 0rem;
+        width: 100vw;
+    }
+    .highlight-header{
+        margin-bottom: 5rem;
+    }
+    .highlight-header h1 {
+        font-size: 50px;
+        line-height: 8px;
+    }
+    .highlight-cards{
+        width: 98%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-shadow: none;
+    }
+    .highlight-card{
+        width: 40%;
+        margin: 0 2rem 5rem 2rem;
+        border: 50px;
+        box-shadow: 7px 7px 14px #15151a, -7px -7px 14px rgb(70, 69, 69);
+    }
+    .highlight-card h1 {
+        font-size: 35px;
+        padding: 1rem 1rem 1rem 3rem;
+    }
+    .highlight-card h2 {
+        font-size: 25px;
+        text-align: center;
+        padding: 1rem 0 1rem 0;
+    }
     
+    .top {
+        margin-top: 0rem;
+    }
+    .middle, .top {
+     margin-bottom: 1rem;
+    box-shadow: none;
+    }
+
 }
 
 
@@ -362,6 +530,96 @@ box-shadow: 14px 14px 20px #15151a, -14px -14px 20px rgb(70, 69, 69);
         width: 100%;
         height: 100%;
     }
+    .first {
+        width: 100vw;
+        height: 25rem;
+    }
+
+    .degree{
+        padding-bottom:0; 
+        margin-bottom: 0;
+    }
+    .degree h1 {
+        font-size: 60px;
+        padding-bottom:0; 
+        margin-bottom: 0;
+    }
+    .temperature{
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    .temperature h2{
+        margin-top: 0;
+        font-size: 20px;
+    } 
+    .date h1, .location{
+        font-size: 15px;
+    }
+    .five-days {
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        padding-bottom: 5rem;
+        box-shadow: none;
+        padding-bottom: 1rem;
+    }
+    .card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 1rem 1rem 1rem;
+    border-radius: 20px;
+    }
+    .card-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 3rem;
+    font-size: 15px;
+    }
+    .highlight {
+        margin-top: 0rem;
+        width: 100vw;
+    }
+    .highlight-header{
+        margin-bottom: 3rem;
+    }
+    .highlight-header h1 {
+        font-size: 35px;
+        line-height: 8px;
+    }
+    .highlight-cards{
+        width: 98%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-shadow: none;
+    }
+    .highlight-card{
+        width: 95%;
+        margin: 0 2rem 5rem 2rem;
+        border: 50px;
+        box-shadow: 7px 7px 14px #15151a, -7px -7px 14px rgb(70, 69, 69);
+    }
+    .highlight-card h1 {
+        font-size: 35px;
+        padding: 1rem 1rem 1rem 3rem;
+    }
+    .highlight-card h2 {
+        font-size: 25px;
+        text-align: center;
+        padding: 1rem 0 1rem 0;
+    
+    }
+    
+    .top {
+        margin-top: 0rem;
+    }
+    .middle, .top {
+     margin-bottom: 1rem;
+    box-shadow: none;
+    }
+    
        
 }
 
