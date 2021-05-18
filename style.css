@@ -52,7 +52,7 @@
   #myApp{
       padding: 0;
       margin: 0;
-      width: 80%;
+      width: 100%;
       box-shadow: 4px 4px 8px #101120, -4px -4px 8px rgba(0, 0, 0, 0.5);
   }
   #myApp h1{
@@ -66,12 +66,12 @@
     z-index: 2;
     position: absolute;
     width: 100vw;
-    height: 85rem;
+    height: 98rem;
     background-color: rgba(0, 0, 0, .7);
 }
 .first {
     width: 100vw;
-    height: 85rem;
+    height: 94rem;
 }
 .background {
     display: flex;
@@ -153,10 +153,15 @@
     margin-bottom: 1rem;
 }
 .temperature h2{
-    font-size: 120px;
+    font-size: 290px;
 } 
 .date h1, .location{
-    font-size: 50px;
+    font-size: 120px;
+}
+.days-card{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 .five-days {
     display: flex;
@@ -166,11 +171,12 @@
     width: 80%;
     height: auto;
     box-shadow: 14px 14px 20px #15151a, -14px -14px 20px rgb(70, 69, 69);
-    padding-bottom: 5rem;
+    padding-bottom: 15rem;
+    padding-top: 15rem;
 }
 .card {
 box-sizing: border-box;
-width: 500px;
+width: 1200px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -183,8 +189,16 @@ box-shadow: 7px 7px 14px #15151a, -7px -7px 20px rgb(70, 69, 69);
 display: flex;
 justify-content: space-between;
 width: 50%;
-margin-top: 7rem;
-font-size: 30px;
+margin-top: 16rem;
+font-size: 60px;
+}
+#image{
+    width: 600px;
+    height: 600px;
+}
+#image img {
+    width: 100%;
+    height: 100%;
 }
 .highlight {
     margin-top: 15rem;
@@ -427,6 +441,11 @@ box-shadow: 14px 14px 20px #15151a, -14px -14px 20px rgb(70, 69, 69);
     .date h1, .location{
         font-size: 25px;
     }
+    #image{
+        width: 400px;
+        height: 400px;
+    }
+    
     .five-days {
         width: 90%;
         padding-bottom: 5rem;
@@ -487,6 +506,10 @@ box-shadow: 14px 14px 20px #15151a, -14px -14px 20px rgb(70, 69, 69);
     .middle, .top {
      margin-bottom: 1rem;
     box-shadow: none;
+    }
+    #image{
+        width: 200px;
+        height: 200px;
     }
 
 }
