@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <title>My-Weather-App</title>
 </head>
 <body>
@@ -34,21 +35,22 @@
 
 <section  class="temp" data-aos="zoom-in">
     <div class="degree">
-        <h1>15 oC</h1>
+        <h1 id="todayT"></h1>
     </div>
     <div class="temperature">
         <h2>Shower</h2>
     </div>
     <div class="date">
-        <h1>Today . Mon, 17 2021</h1> 
+        <h1 >Today . Mon, 17 2021</h1> 
     </div>
     <div class="location">
-        <h1>Lagos</h1>
+        <h1 id="current-location"></h1>
     </div>
 </section>
 
 <section class="search">
     <input type="text" name="search" id="search" placeholder="Search Locations">
+    <button id="searchBtn" type="submit">Search</button>
 </section>
 
 <section class="days-card">
@@ -152,10 +154,10 @@
                     <h1>Wind Status</h1>
                 </div>
                 <div class="middle">
-                   <h2>7 mph</h2> 
+                   <h2 id="wind-speed"></h2> 
                 </div>
                 <div class="bottom">
-                    <h2>wsw</h2>
+                    <h2 id="wind-direction"></h2>
                 </div>
             </div>
         </div>
@@ -163,12 +165,11 @@
         <div class="highlight-card" data-aos="zoom-in-down">
             <div class="humidity">
                 <div class="top">
-                    <h1>Humidity</h1>
+                    <h1 id="sunrise"></h1>
                 </div>
                 <div class="middle">
-                    <h2>81%</h2>
+                    <h2 id="sunset"></h2>
                 </div>
-                <div class="bottom"></div>
             </div>
         </div>
 
@@ -178,7 +179,7 @@
                     <h1>Visibility</h1>
                 </div>
                 <div class="middle">
-                    <h2>4 Miles</h2>
+                    <h2 id="v-range"></h2>
                 </div>
             </div>
         </div>
@@ -189,13 +190,12 @@
                     <h1>Air Pressure</h1>
                 </div>
                 <div class="middle">
-                    <h2>999 Mb</h2>
+                    <h2 id="pressure"></h2>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 
 
 <script src="script.js"></script>
