@@ -22,6 +22,36 @@
     --on-background-alt: rgba(255, 255, 255, 0.7);
     --background: #121212;
   }
+#loading{
+    z-index: 8;
+    background-color: var(--background-color);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-bottom: 16px solid blue;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
   
   html {
     scroll-behavior: smooth;
@@ -240,9 +270,9 @@ box-shadow: 7px 7px 14px #15151a, -7px -7px 20px rgb(70, 69, 69);
 .card-footer{
 display: flex;
 justify-content: space-between;
-width: 50%;
+width: 80%;
 margin-top: 16rem;
-font-size: 60px;
+font-size: 50px;
 }
 #image{
     width: 600px;
@@ -392,9 +422,9 @@ box-shadow: 14px 14px 20px #15151a, -14px -14px 20px rgb(70, 69, 69);
     .card-footer{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 70%;
     margin-top: 3rem;
-    font-size: 15px;
+    font-size: 20px;
     }
     .highlight {
         margin-top: 0rem;
@@ -541,7 +571,7 @@ box-shadow: 14px 14px 20px #15151a, -14px -14px 20px rgb(70, 69, 69);
     .card-footer{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 78%;
     margin-top: 3rem;
     font-size: 15px;
     }
@@ -699,7 +729,7 @@ box-shadow: 14px 14px 20px #15151a, -14px -14px 20px rgb(70, 69, 69);
     .card-footer{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 80%;
     margin-top: 3rem;
     font-size: 15px;
     }

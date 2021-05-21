@@ -10,6 +10,9 @@
     <title>My-Weather-App</title>
 </head>
 <body>
+    <section id="loading">
+        <div class="loader"></div>
+    </section>
 <section class="header">
     <div id="myApp">
         <div class="clour">
@@ -28,7 +31,7 @@
     </div>
     <div class="cloud-type">
         <div class="cloud-img">
-            <img src="./weather-app-assets/LightRain.png" alt="img">
+            <img id="main-cloud" src="" alt="img">
         </div>
     </div>
 </section>
@@ -57,85 +60,85 @@
 <div class="five-days">
     <div class="card" data-aos="flip-left">
         <div class="date">
-            <h1>Tomorrow</h1>
+            <h1 class="fDate">Tomorrow</h1>
         </div>
         <div id="image" class="one-img">
-            <img src="./weather-app-assets/HeavyRain.png" alt="">
+            <img class="fImg" src="" alt="">
         </div>
         <div class="card-footer">
             <div class="tempe">
-                <h1>30 oC</h1>
+                <h1 class="fMinTemp"></h1>
             </div>
             <div class="tempe-two">
-                <h1>12 oC</h1>
+                <h1 class="fMaxTemp"></h1>
             </div>
         </div>
     </div>
 
     <div class="card" data-aos="zoom-in-up">
         <div class="date">
-            <h1>Tue 18, May</h1>
+            <h1 class="sDate">Tue 18, May</h1>
         </div>
         <div id="image" class="two-img">
-            <img src="./weather-app-assets/LightCloud.png" alt="">
+            <img class="sImg" src="" alt="">
         </div>
         <div class="card-footer">
             <div class="tempe">
-                <h1>30 oC</h1>
+                <h1 class="sMinTemp"></h1>
             </div>
             <div class="tempe-two">
-                <h1>12 oC</h1>
+                <h1 class="sMaxTemp"></h1>
             </div>
         </div>
     </div>
 
     <div class="card" data-aos="flip-right">
         <div class="date">
-            <h1>Wed 19, May</h1>
+            <h1  class="tDate">Wed 19, May</h1>
         </div>
         <div id="image" class="three-img">
-            <img  src="./weather-app-assets/LightRain.png" alt="">
+            <img  class="tImg"  src="" alt="">
         </div>
         <div class="card-footer">
             <div class="tempe">
-                <h1>30 oC</h1>
+                <h1  class="tMinTemp"></h1>
             </div>
             <div class="tempe-two">
-                <h1>12 oC</h1>
+                <h1 class="tMaxTemp"></h1>
             </div>
         </div>
     </div>
 
     <div class="card" data-aos="zoom-in-left">
         <div class="date">
-            <h1>Thru 20, May</h1>
+            <h1  class="forthDate">Thru 20, May</h1>
         </div>
         <div id="image" class="four-img">
-            <img src="./weather-app-assets/Thunderstorm.png" alt="">
+            <img  class="forthImg" src="" alt="">
         </div>
         <div class="card-footer">
             <div class="tempe">
-                <h1>30 oC</h1>
+                <h1 class="forthMinTemp"></h1>
             </div>
             <div class="tempe-two">
-                <h1>12 oC</h1>
+                <h1 class="forthMaxTemp"></h1>
             </div>
         </div>
     </div>
 
     <div class="card" data-aos="zoom-in-right">
         <div class="date">
-            <h1>Fri 21, May</h1>
+            <h1 class="lDate">Fri 21, May</h1>
         </div>
         <div id="image" class="five-img">
-            <img src="./weather-app-assets/Hail.png" alt="">
+            <img class="lImg" src="" alt="">
         </div>
         <div class="card-footer">
             <div class="tempe">
-                <h1>30 oC</h1>
+                <h1 class="lMinTemp"></h1>
             </div>
             <div class="tempe-two">
-                <h1>12 oC</h1>
+                <h1 class="lMaxTemp"></h1>
             </div>
         </div>
     </div>
@@ -176,7 +179,7 @@
         <div class="highlight-card" data-aos="zoom-in-left">
             <div class="humidity">
                 <div class="top">
-                    <h1>Visibility</h1>
+                    <h1 class="visible">Visibility</h1>
                 </div>
                 <div class="middle">
                     <h2 id="v-range"></h2>
